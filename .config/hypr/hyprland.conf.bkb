@@ -1,0 +1,9 @@
+source = ~/.config/hypr/conf/MONITORS.conf
+source = ~/.config/hypr/conf/PRGRAMS.conf
+source = ~/.config/hypr/conf/AUTOSTART.conf
+source = ~/.config/hypr/conf/ENVIRONMENT.conf
+source = ~/.config/hypr/conf/ERMISSIONS.conf
+source = ~/.config/hypr/conf/LOOK-AND-FEEL.conf
+source = ~/.config/hypr/conf/INPUT.conf
+source = ~/.config/hypr/conf/KEYBINDINGS.conf
+source = ~/.config/hypr/conf/WORKSPACES.conf
