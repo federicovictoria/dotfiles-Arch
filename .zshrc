@@ -19,7 +19,7 @@ setopt hist_find_no_dups
 # ================================>
 autoload -U compinit 
 compinit
-source /home/fer/.zsh/fzf-tab/fzf-tab.zsh
+#source /home/fer/.zsh/fzf-tab/fzf-tab.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #================================>
@@ -54,7 +54,7 @@ alias ls='ls --color=auto'
 #================================>
 # EVAL
 #================================>
-eval "$(fzf --zsh)"
+#eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
 #================================>
 # EXPORT
