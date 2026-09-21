@@ -80,3 +80,19 @@ ln -s ~/.dotfiles-Arch/wofi ~/.config/wofi
 ln -s ~/.dotfiles-Arch/starship.toml ~/.config/starship.toml
 ln -s ~/.dotfiles-Arch/.bashrc ~/.bashrc
 ln -s ~/.dotfiles-Arch/.zshrc ~/.zshrc
+```
+
+---
+
+## 🐚 Configuración Opcional: Zsh + Plugins
+
+Si prefieres usar **Zsh** en lugar de Bash, puedes instalar la shell y sus plugins de autocompletado y resaltado de sintaxis con el siguiente comando:
+
+```bash
+# 1. Instalar Zsh y plugins desde los repositorios oficiales y AUR
+sudo pacman -S --needed zsh zsh-autosuggestions zsh-syntax-highlighting
+yay -S --needed zsh-theme-powerlevel10k-git zsh-fzf-tab-git
+
+# 2. Cambiar la shell predeterminada a Zsh (opcional)
+chsh -s /usr/bin/zsh
+```
