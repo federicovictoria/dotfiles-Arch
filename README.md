@@ -53,3 +53,30 @@ sudo pacman -S --needed otf-codenewroman-nerd
 # 4. Opcional (Contenedores)
 sudo pacman -S --needed flatpak
 ```
+
+## 🚀 Instalación y Enlace Simbólico
+
+Para instalar y aplicar las configuraciones en un nuevo sistema, sigue estos pasos:
+
+```bash
+# 1. Clonar este repositorio en tu directorio personal
+git clone git@github.com:tu_usuario/dotfiles-Arch.git ~/.dotfiles-Arch
+
+# 2. Asegurar que existe el directorio de configuración personal
+mkdir -p ~/.config
+
+# 3. Limpiar carpetas y archivos predeterminados para evitar conflictos
+rm -rf ~/.config/dunst ~/.config/hypr ~/.config/kitty ~/.config/waybar ~/.config/wofi
+rm -f ~/.config/starship.toml ~/.bashrc ~/.zshrc
+
+# 4. Crear enlaces simbólicos para las carpetas de configuración
+ln -s ~/.dotfiles-Arch/dunst ~/.config/dunst
+ln -s ~/.dotfiles-Arch/hypr ~/.config/hypr
+ln -s ~/.dotfiles-Arch/kitty ~/.config/kitty
+ln -s ~/.dotfiles-Arch/waybar ~/.config/waybar
+ln -s ~/.dotfiles-Arch/wofi ~/.config/wofi
+
+# 5. Crear enlaces simbólicos para los archivos de la terminal y prompt
+ln -s ~/.dotfiles-Arch/starship.toml ~/.config/starship.toml
+ln -s ~/.dotfiles-Arch/.bashrc ~/.bashrc
+ln -s ~/.dotfiles-Arch/.zshrc ~/.zshrc
