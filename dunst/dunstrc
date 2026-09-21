@@ -1,0 +1,98 @@
+[global]
+    # Monitor y Posición
+    monitor = 0
+    follow = mouse
+    geometry = "320x6-20+50"
+    origin = top-right
+    offset = 20x50
+    notification_limit = 5
+
+    # Apariencia Visual
+    progress_bar = true
+    progress_bar_height = 8
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+
+    indicate_hidden = yes
+    transparency = 15
+    separator_height = 2
+    padding = 12
+    horizontal_padding = 15
+    text_icon_padding = 10
+    frame_width = 2
+
+    # Colores base (A juego con Waybar y el fondo)
+    frame_color = "#89b4fa"      # Azul helado suave
+    separator_color = "frame"
+
+    # Tipografía y Formato
+    font = JetBrainsMono Nerd Font 10
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+
+    # Iconos
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 48
+    icon_path = /usr/share/icons/Papirus-Dark/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/
+
+    # Interacción con Ratón (Clic para abrir/enfocar aplicación)
+    # action: Ejecuta la acción predeterminada de la app (abrir link, abrir chat, enfocar ventana)
+    mouse_left_click = action, close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_current
+
+    # Historia
+    sticky_history = yes
+    history_length = 20
+
+    # Misceláneos
+    dmenu = /usr/bin/rofi -dmenu -p dunst:
+    browser = /usr/bin/xdg-open
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+
+#================================>
+# NIVELES DE URGENCIA / COLORES
+#================================>
+
+[urgency_low]
+    # Azul noche profundo transparente con texto púrpura suave
+    background = "#181825"
+    foreground = "#cdd6f4"
+    frame_color = "#313244"
+    timeout = 5
+
+[urgency_normal]
+    # Púrpura/Azul ajustado a la paleta del cielo nocturno
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#cba6f7"
+    timeout = 8
+
+[urgency_critical]
+    # Magenta/Rojo para alertas importantes
+    background = "#1e1e2e"
+    foreground = "#f38ba8"
+    frame_color = "#f38ba8"
+    timeout = 0
+
+#================================>
+# REGLAS PARA FLATPAKS Y REDES
+#================================>
+
+# Asegura que las aplicaciones en Flatpak ejecuten el manipulador de URLs correcto
+[flatpak_apps]
+    desktop_entry = "^org\.telegram\.desktop|^com\.discordapp\.Discord|^org\.mozilla\.firefox|^com\.brave\.Browser"
+    script = ""
