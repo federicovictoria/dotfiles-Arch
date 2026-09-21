@@ -60,7 +60,7 @@ Para instalar y aplicar las configuraciones en un nuevo sistema, sigue estos pas
 
 ```bash
 # 1. Clonar este repositorio en tu directorio personal
-git clone git@github.com:tu_usuario/dotfiles-Arch.git ~/.dotfiles-Arch
+git clone https://github.com/federicovictoria/dotfiles-Arch.git ~/.dotfiles-Arch
 
 # 2. Asegurar que existe el directorio de configuración personal
 mkdir -p ~/.config
