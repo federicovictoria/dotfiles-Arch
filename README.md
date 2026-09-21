@@ -43,13 +43,13 @@ sudo pacman -S --needed base-devel git
 git clone [https://aur.archlinux.org/yay.git](https://aur.archlinux.org/yay.git) && cd yay && makepkg -si
 
 # 2. Paquetes principales
-sudo pacman -S hyprland kitty waybar wofi dunst hyprpaper hyprlock hypridle \
+sudo pacman -S --needed hyprland kitty waybar wofi dunst hyprpaper hyprlock hypridle \
                starship nwg-look grim slurp wl-clipboard swappy yazi papirus-icon-theme
 
 # 3. Fuentes
-sudo pacman -S ttf-inter
-yay -S ttf-codenewroman-nerd
+ sudo pacman -S --needed inter-font  
+sudo pacman -S --needed otf-codenewroman-nerd
 
 # 4. Opcional (Contenedores)
-sudo pacman -S flatpak
+sudo pacman -S --needed flatpak
 ```
