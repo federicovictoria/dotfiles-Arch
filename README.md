@@ -1,4 +1,4 @@
-# 🌌 dotfiles-Arch | Hyprland Neon Setup
+<h1 style="text-aline: center;"> Fede Arch </h1>
 
 Un entorno de escritorio moderno, fluido y minimalista para **Arch Linux** usando **Hyprland**, diseñado con una estética cian neón, azul profundo y transparencias elegantes.
 
@@ -15,7 +15,6 @@ Un entorno de escritorio moderno, fluido y minimalista para **Arch Linux** usand
 - **Interfaz y Sistema:** `Inter`
 - **Terminal y Código:** `CodeNewRoman Nerd Font`
 - **Iconos:** `Papirus-Dark`
-- **Tema GTK:** Oscuro personalizado mediante `nwg-look`
 
 ---
 
@@ -26,7 +25,7 @@ Antes de enlazar la configuración, asegúrate de instalar las herramientas y fu
 ```bash
 # 1. Instalar helper del AUR (yay) si no lo tienes
 sudo pacman -S --needed base-devel git
-git clone [https://aur.archlinux.org/yay.git](https://aur.archlinux.org/yay.git) && cd yay && makepkg -si
+git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 # 2. Paquetes principales
 sudo pacman -S --needed hyprland kitty waybar wofi dunst hyprpaper hyprlock hypridle \
@@ -77,7 +76,7 @@ Si prefieres usar **Zsh** en lugar de Bash, puedes instalar la shell y sus plugi
 ```bash
 # 1. Instalar Zsh y plugins desde los repositorios oficiales y AUR
 sudo pacman -S --needed zsh zsh-autosuggestions zsh-syntax-highlighting
-yay -S --needed zsh-theme-powerlevel10k-git zsh-fzf-tab-git
+yay -S --needed fzf-tab
 
 # 2. Cambiar la shell predeterminada a Zsh (opcional)
 chsh -s /usr/bin/zsh
