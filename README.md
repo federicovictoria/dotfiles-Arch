@@ -1,4 +1,4 @@
-<h1 style="text-aline: center;"> Fede Arch </h1>
+<h1 style="text-align: center;"> Fede Arch </h1>
 
 Un entorno de escritorio moderno, fluido y minimalista para **Arch Linux** usando **Hyprland**, diseñado con una estética cian neón, azul profundo y transparencias elegantes.
 
