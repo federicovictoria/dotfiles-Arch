@@ -6,23 +6,9 @@ Un entorno de escritorio moderno, fluido y minimalista para **Arch Linux** usand
 ![WM-Hyprland](https://img.shields.io/badge/WM-Hyprland-00f0ff?style=for-the-badge&logo=hyprland)
 ![Shell-Bash/Zsh](https://img.shields.io/badge/Shell-Bash%20%2F%20Zsh-4EAA25?style=for-the-badge&logo=gnu-bash)
 
+![arch](/assets/arch.png)
 ---
 
-## 📸 Componentes del Entorno
-
-| Componente | Herramienta / Configuración |
-| :--- | :--- |
-| **Compositor WM** | [Hyprland](https://hyprland.org/) (Configurado con Lua) |
-| **Barra Superior** | [Waybar](https://github.com/Alexays/Waybar) |
-| **Lanzador de Apps** | [Wofi](https://hg.sr.ht/~scoopta/wofi) |
-| **Notificaciones** | [Dunst](https://dunst-project.org/) |
-| **Terminal** | [Kitty](https://sw.kovidgoyal.net/kitty/) |
-| **Prompt** | [Starship](https://starship.rs/) |
-| **Gestor GTK** | `nwg-look` |
-| **Pantalla de Bloqueo** | `hyprlock` & `hypridle` |
-| **Fondo de Pantalla** | `hyprpaper` |
-
----
 
 ## 🔤 Fuentes y Apariencia
 

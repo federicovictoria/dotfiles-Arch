@@ -32,9 +32,10 @@ ZSH_HIGHLIGHT_STYLES[function]='fg=#98ffc0'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=#c3d8ff'
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#75c3ff'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#75c3ff'
-ZSH_HIGHLIGHT_STYLES[path]='fg=#bfd4bf'
-ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#bfd4bf'
+ZSH_HIGHLIGHT_STYLES[path]='fg=#989dfb'
+ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#989dfb'
 ZSH_HIGHLIGHT_STYLES[error]='fg=#e4717a,bold'
+
 #================================>
 # KEYBINDS
 #================================>
@@ -56,6 +57,7 @@ alias ls='ls --color=auto'
 #================================>
 #eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
+eval "$(fzf --zsh)"z
 #================================>
 # EXPORT
 #================================>

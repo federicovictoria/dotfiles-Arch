@@ -14,7 +14,7 @@
 window {
     margin: 0px;
     /* Fondo azul-negro profundo con 70% de opacidad (0.7) */
-    background-color: rgba(5, 11, 20, 0.70);
+    background-color: rgba(5, 11, 20, 0.9);
     /* Borde cian neón centelleante */
     border: 2px solid #00f0ff;
     border-radius: 16px;
