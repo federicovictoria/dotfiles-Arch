@@ -12,18 +12,18 @@ setopt share_history
 setopt hist_ignore_space
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
-setopt hist_ignore_dups 
+setopt hist_ignore_dups
 setopt hist_find_no_dups
 #================================>
-# PLUGINS 
+# PLUGINS
 # ================================>
-autoload -U compinit 
+autoload -U compinit
 compinit
 source /usr/share/zsh/plugins/fzf-tab/fzf-tab.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #================================>
-# STYLES 
+# STYLES
 #================================>
 ZSH_HIGHLIGHT_STYLES[command]='fg=#98ffc0,bolditalic'
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=#98ffc0'
@@ -52,6 +52,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 #alias
 #================================>
 alias ls='ls --color=auto'
+alias zed='zeditor'
 #================================>
 # EVAL
 #================================>
@@ -62,3 +63,5 @@ eval "$(fzf --zsh)"z
 # EXPORT
 #================================>
 export PATH=$HOME/.local/bin:$PATH
+export PAM_KWALLET_DISABLE=1
+export SSH_AUTH_SOCK
