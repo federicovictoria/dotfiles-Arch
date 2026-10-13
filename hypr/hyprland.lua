@@ -369,3 +369,56 @@ hl.window_rule({
     -- move = "center",
     float = true,
 })
+
+
+
+
+
+
+
+-- ==========================================
+-- LUPA DE PANTALLA NATIVA PARA HYPRLAND
+-- Requiere Hyprland 0.55+
+-- ==========================================
+
+local MIN_ZOOM = 1.0
+local MAX_ZOOM = 4.0
+local ZOOM_STEP = 0.5
+local ZOOM_TOGGLE = 1.5
+
+local function zoom(offset)
+    local current = hl.get_config("cursor.zoom_factor")
+
+    if offset == nil then
+        if current > MIN_ZOOM then
+            current = MIN_ZOOM
+        else
+            current = ZOOM_TOGGLE
+        end
+    else
+        current = current + offset
+    end
+
+    current = math.max(MIN_ZOOM, math.min(MAX_ZOOM, current))
+
+    hl.config({
+        cursor = {
+            zoom_factor = current
+        }
+    })
+end
+
+-- Activar / desactivar la lupa
+hl.bind("SUPER + Z", function()
+    zoom(nil)
+end)
+
+-- Aumentar zoom
+hl.bind("SUPER + KP_ADD", function()
+    zoom(ZOOM_STEP)
+end)
+
+-- Reducir zoom
+hl.bind("SUPER + minus", function()
+    zoom(-ZOOM_STEP)
+end)
