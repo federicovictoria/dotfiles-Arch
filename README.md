@@ -33,7 +33,7 @@ sudo pacman -S --needed hyprland kitty waybar wofi dunst hyprpaper hyprlock hypr
 
 # 3. Fuentes
  sudo pacman -S --needed inter-font  
-sudo pacman -S --needed otf-codenewroman-nerd
+ sudo pacman -S --needed ttf-firacode-nerd
 
 # 4. Opcional (Contenedores)
 sudo pacman -S --needed flatpak
